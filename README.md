@@ -6,7 +6,7 @@ Oh, and if you're reading this and are Prince Charming, please get in touch with
 
 # Screenshot
 
-<img src="screenshot.png" alt="snow-white">
+<img src="screenshot.png" alt="snow-white"/>
 
 # Getting Started with Create React App
 
