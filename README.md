@@ -1,3 +1,13 @@
+# Snow White Calling Card
+
+This was a simple React project built from scratch, exploring and developing my understanding of props.
+
+Oh, and if you're reading this and are Prince Charming, please get in touch with SW soon - she won't stop banging on about how great you'll be and it's getting boring.
+
+# Screenshot
+
+<img src="screenshot" alt="snow-white">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
