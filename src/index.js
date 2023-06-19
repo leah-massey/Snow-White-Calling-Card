@@ -21,7 +21,7 @@ function Avatar() {
 function Intro() {
   return (
     <div>
-      <h1>My name is Snow White</h1>
+      <h1>Snow White</h1>
       <p>Dainty lady, looking for her Mr. Right 💍.</p>
 
       <p>
