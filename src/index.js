@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="card">
       <Avatar />
-      <div>
+      <div className="data">
         <Intro />
         <SkillList />
       </div>
@@ -22,11 +22,14 @@ function Intro() {
   return (
     <div>
       <h1>My name is Snow White</h1>
+      <p>Dainty lady, looking for her Mr. Right 💍.</p>
+
       <p>
-        Dainty lady, looking for Mr. Right. Woodland animals dance at my feet,
-        my pristine bowl-cut blow-dry is never out of place despite my
-        challenging living condiditions (shack in forest, you don't wanna know)
-        and I'm told my face is the stuff of fairy tales. I'm also sure I am /
+        {" "}
+        I'm told my face is the stuff of fairy tales. My pristine bowl-cut
+        blow-dry is never out of place despite my challenging living conditions
+        (shack in the forest, you don't wanna know 🤦🏻‍♀️). Oh, and woodland animals
+        dance at my feet, it's weird but I kinda like it. I'm also sure I am /
         was / will be a princess one day, so paupers need not apply.
       </p>
     </div>
@@ -36,24 +39,19 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill="Loves red red apples" emoji="🍎" background-color="blue" />
-      <Skill
-        skill="Likes people great and small"
-        emoji="📐"
-        background-color="pink"
-      />
-      <Skill skill="Fairest of them all" emoji="🪞" background-color="lilac" />
-      <Skill skill="Favourite number:" emoji="7️⃣" background-color="lilac" />
-      <Skill skill="Born 1932" emoji="👵🏻" background-color: "red" />
+      <Skill skill="Loves red red apples" emoji="🍎" color="#F98B73" />
+      <Skill skill="Likes people great and small" emoji="📐" color="pink" />
+      <Skill skill="Fairest of them all" emoji="🪞" color="#F9FAA3" />
+      <Skill skill="Favourite number:" emoji="7️⃣" color="#E6C5FA" />
     </div>
   );
 }
 
 function Skill(props) {
   return (
-    <div className="skill">
-      <p>{props.skill}</p>
-      <p>{props.emoji}</p>
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
     </div>
   );
 }
