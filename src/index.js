@@ -8,7 +8,7 @@ function App() {
       <Avatar />
       <div>
         <Intro />
-        <Skillset />
+        <SkillList />
       </div>
     </div>
   );
@@ -25,22 +25,35 @@ function Intro() {
       <p>
         Dainty lady, looking for Mr. Right. Woodland animals dance at my feet,
         my pristine bowl-cut blow-dry is never out of place despite my
-        challenging living condiditions (shack in forest) and I'm told my face
-        is the stuff of fairy tales. I'm also sure I am / was / will be a
-        princess one day, so paupers need not apply.
+        challenging living condiditions (shack in forest, you don't wanna know)
+        and I'm told my face is the stuff of fairy tales. I'm also sure I am /
+        was / will be a princess one day, so paupers need not apply.
       </p>
     </div>
   );
 }
 
-function Skillset() {
+function SkillList() {
   return (
     <div className="skill-list">
-      <p className="skill">Loves red red apples 🍎</p>
-      <p className="skill">Likes people great and small 📐 </p>
-      <p className="skill">Fairest of them all 🪞</p>
-      <p className="skill">Favourite number : 7️⃣</p>
-      <p className="skill">Born 1932 👵🏻</p>
+      <Skill skill="Loves red red apples" emoji="🍎" background-color="blue" />
+      <Skill
+        skill="Likes people great and small"
+        emoji="📐"
+        background-color="pink"
+      />
+      <Skill skill="Fairest of them all" emoji="🪞" background-color="lilac" />
+      <Skill skill="Favourite number:" emoji="7️⃣" background-color="lilac" />
+      <Skill skill="Born 1932" emoji="👵🏻" background-color: "red" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return (
+    <div className="skill">
+      <p>{props.skill}</p>
+      <p>{props.emoji}</p>
     </div>
   );
 }
