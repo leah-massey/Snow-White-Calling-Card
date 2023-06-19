@@ -1,12 +1,9 @@
-# Snow White Calling Card
+<h1 align="center">Snow White Calling Card</h1>
 
-This was a simple React project built from scratch, exploring and developing my understanding of props.
-
-Oh, and if you're reading this and are Prince Charming, please get in touch with SW soon - she won't stop banging on about how great you'll be and it's getting boring.
-
-# Screenshot
-
-<img src="screenshot.png" alt="snow-white"/>
+<p align="center">This was a simple React project built from scratch, exploring and developing my understanding of props.</p>
+<p align="center">
+  <img src="public/screenshot.png" alt="snow-white" width="400px"/>
+</p>
 
 # Getting Started with Create React App
 
